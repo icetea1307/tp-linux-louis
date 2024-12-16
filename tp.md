@@ -16,3 +16,8 @@
   ```
   ufw enable
   ```
+  ```
+  ufw allow from 192.168.1.94 to any port 22
+  ufw allow from 192.168.1.94 to any port 80
+  ufw allow from 192.168.1.94 to any port 443
+  ```
