@@ -31,14 +31,8 @@ apt install fail2ban
 ```
 # Configuration de fail2ban
 ```
-nano /etc/fail2ban/jail.conf
+nano /etc/fail2ban/jail.local
 ```
 ```
-systemctl enable fail2ban
-```
-```
-systemctl start fail2ban
-```
-```
-systemctl status fail2ban
-```
+ systemctl start fail2ban
+ fail2ban-client status sshd
