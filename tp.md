@@ -9,9 +9,6 @@
 ```
  apt install nginx
  ```
- ```
-  apt install ufw
-  ```
   # configuration du firewall
   ```
   apt install ufw
