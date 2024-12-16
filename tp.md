@@ -18,6 +18,10 @@
   ```
   ```
   ufw allow from 192.168.1.94 to any port 22
-  ufw allow from 192.168.1.94 to any port 80
-  ufw allow from 192.168.1.94 to any port 443
   ```
+  # Permissions du serveur nginx
+  ```
+  root@debian:~# chmod 644 /etc/nginx/sites-enabled/*
+root@debian:~# chmod 644 /etc/nginx/sites-available/*
+root@debian:~# chmod 644 /etc/nginx/nginx.conf
+```
