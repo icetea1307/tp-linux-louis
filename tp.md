@@ -17,11 +17,28 @@
   ufw enable
   ```
   ```
-  ufw allow from 192.168.1.94 to any port 22
+  ufw allow from 192.168.1.125 to any port 22
   ```
   # Permissions du serveur nginx
   ```
   root@debian:~# chmod 644 /etc/nginx/sites-enabled/*
 root@debian:~# chmod 644 /etc/nginx/sites-available/*
 root@debian:~# chmod 644 /etc/nginx/nginx.conf
+```
+# installer fail2ban
+```
+apt install fail2ban
+```
+# Configuration de fail2ban
+```
+nano /etc/fail2ban/jail.conf
+```
+```
+systemctl enable fail2ban
+```
+```
+systemctl start fail2ban
+```
+```
+systemctl status fail2ban
 ```
